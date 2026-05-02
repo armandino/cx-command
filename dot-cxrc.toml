@@ -1,0 +1,20 @@
+# cx — directory navigation config
+# Letters are auto-assigned in the order aliases appear below (a, b, c, ... aa, ab, ...).
+# Paths support ${VAR} / $VAR env-var expansion and ~ home expansion.
+#
+# Aliases are organized into groups for display only. `[aliases]` is the default
+# group; `[aliases.<group>]` defines a named group. Names are globally unique.
+
+[settings]
+history_size = 50
+
+[openers]
+code = "code"
+
+[aliases]
+downdloads = "~/Downloads"
+temp = "~/temp"
+
+[aliases.user]
+user-settings = "~/opt/user-settings"
+bin = "~/opt/user-settings/user-bin"

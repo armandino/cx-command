@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cx-command"
+version = "0.1.0"
+description = "AI-generated utility for firectory navigation by alias — jump to any directory with a short name"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE.txt"]
+requires-python = ">=3.11"
+authors = [
+    { name = "Arman Sharif", email = "armandino-gh@pm.me" },
+]
+keywords = ["directory", "navigation", "bookmark", "aliases", "cd", "ai-generated"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Microsoft :: Windows :: Windows 10",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Desktop Environment :: File Managers",
+    "Topic :: System :: Shells",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "rich >= 13.0",
+]
+
+[project.scripts]
+cx = "cx_cli.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/armandino/cx-command"
+Issues = "https://github.com/armandino/cx-command/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["cx-command"]
