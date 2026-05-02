@@ -17,7 +17,7 @@ cx -                            # cd to previous dir
 ## Install
 
 ```bash
-pip install cx-cli
+pip install cx-command
 ```
 
 Then add shell integration to your `~/.bashrc`:
