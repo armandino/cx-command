@@ -9,24 +9,25 @@ auto-assigned letter shortcuts, and sub-path navigation.
 ```bash
 cx add src ~/projects/src
 cx src                          # cd to ~/projects/src
-c                               # cd by letter shortcut
 cx src/sub/module               # cd with sub-path
 cx -                            # cd to previous dir
 ```
 
 ## Install
 
+1. Install via pip:
+
 ```bash
 pip install cx-command
 ```
 
-Then add shell integration to your `~/.bashrc`:
+2. Aadd shell integration to your `~/.bashrc`:
 
 ```bash
 eval "$(cx init bash)"
 ```
 
-Restart your shell or `source ~/.bashrc`. That's it.
+3. Restart your shell or `source ~/.bashrc`. That's it.
 
 ## Usage
 
